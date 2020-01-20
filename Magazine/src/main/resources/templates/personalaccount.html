@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" >
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="personalaccount.css">
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	</head>
+	<body>
+		<div class="back"></div>
+		<div th:each="item : ${items}" class="userroom">
+			<div th:text="${item}">
+				
+			</div>
+		</div>
+		
+	</body>
+	<script type="text/javascript" th:inline="javascript">
+			var market = new Vue({
+				el: '#market',	
+				data:{
+					isAuthentication:/*[[${isAuthentication}]]*/false
+				}
+			})
+	</script>
+</html>

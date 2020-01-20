@@ -1,0 +1,72 @@
+body{
+	background:url(back.jpeg);
+	background-repeat: no-repeat; 
+	background-size: 100%;
+}
+
+.conteiner{
+	text-align: center;	
+	margin-top: 5%;
+}
+
+.content:before{
+	position: center;
+	content: "";
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: white;
+	background-repeat: 0;
+	background-image: green;
+	background-size: 100%;
+	background-position: center;
+	position: absolute;
+	transition-property: background;
+	transition-duration: 3s;
+	left: 30px;
+	
+}
+
+#geiners.content:hover:before{
+	background:url(icon_gainer.jpg);
+}
+#protein.content:hover:before{
+	background:url(icon_protein.jpg);
+}
+#bcaa.content:hover:before{
+	background:url(icon_bcaa.png);
+}
+#creatine.content:hover:before{
+	background:url(icon_creatine.jpg);
+}
+#bad.content:hover:before{
+	background:url(icon_bad.jpg);
+}
+#izotonic.content:hover:before{
+	background:url(icon_izotonic.jpg);
+}
+#other.content:hover:before{
+	background:url(icon_other.jpg);
+}
+
+
+.content{
+	position: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 420px;
+	height: 55px;
+	background: white;
+	font-size: 30pt;
+	border: 2px solid green;
+	border-radius: 20px;
+	transform: scale(1); 	
+	transition-duration: 0.4s;
+	transition-property:transform,border,border-radius;
+}
+
+.content:hover{
+	border-radius: 0px;
+	transform: scale(1.1);
+	border:6px solid blue;
+}

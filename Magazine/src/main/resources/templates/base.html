@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:th="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="base.css"  >
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	</head>
+	<body>
+		<div class="back">
+
+		</div>
+		<div class="conteiner" id="market">
+			<div class="content" id="geiners">
+                <a th:href="@{/market?type=1&page=1}">{{item_gainer}}</a>
+			</div>
+			<div class="content" id="protein">
+				<a th:href="@{/market?type=2&page=1}">{{item_protein}}</a>
+			</div>
+			<div class="content" id="bcaa">
+				<a th:href="@{/market?type=3&page=1}">{{item_amin}}</a>
+			</div>
+			<div class="content" id="creatine">
+				<a th:href="@{/market?type=4&page=1}">{{item_creatine}}</a>
+			</div>
+			<div class="content" id="bad">
+				<a th:href="@{/market?type=5&page=1}">{{item_bads}}</a>
+			</div>
+			<div class="content" id="izotonic">
+				<a th:href="@{/market?type=6&page=1}">{{item_izotonic}}</a>
+			</div>
+			<div class="content" id="other">
+				<a th:href="@{/market?type=7&page=1}">{{item_other}}</a>
+			</div>
+		</div>
+		<script type="text/javascript" th:inline="javascript">
+			var market = new Vue({
+				el: '#market',
+				data: {
+					isAuthentication:/*[[${isAuthentication}]]*/false,
+					RUSlang:false,
+					ENGlang:false,
+ 				 	language:null,
+ 				 	item_gainer:'gainer',
+ 				 	item_protein:'protein',
+ 				 	item_amin:'amin',
+ 				 	item_creatine:'creatine',
+ 				 	item_bads:'bads',
+ 				 	item_izotonic:'izotonic',
+ 				 	item_other:'other',
+  				}, 
+  				methods:{
+  					getlang: function(){
+  						this.language=navigator.language 
+  					}
+  				},
+    			mounted: function(){
+    				this.getlang();
+    				switch(this.language){
+    					case 'ru-RU':
+    						this.item_creatine='креатин';
+    						this.item_gainer='гейнер';
+    						this.item_izotonic='изотоники';
+    						this.item_bads='бады';
+    						this.item_other='другое';
+    						this.item_amin='аминокислоты';
+    						this.item_protein=/*[[${messege}]]*/ '';
+    						this.RUSlang=true;
+    						this.ENGlang=false;
+    						break;
+    					case 'defoult':
+    						break;	
+    						
+    				}
+    				console.log(this.language);
+  				}
+			})
+		</script>
+	</body>
+</html>

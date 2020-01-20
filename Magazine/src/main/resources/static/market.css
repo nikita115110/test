@@ -1,0 +1,134 @@
+html{
+	height: 100%; 
+	width: 100%;
+}
+
+div{
+	text-align: center;
+}
+
+.auto{
+	width: 13%;
+	height: 10%;
+	position: absolute;
+	right: 4%;
+	top: 8%;
+	background-color: white;
+	border: 2px solid green;
+	border-radius: 20px;
+	font-size: 115%;
+}
+
+.price{
+	height: 8%;
+}
+.stars{
+ 	height: 8%;
+}
+.info{
+	height: 8%;
+}
+.buy{
+	height: 8%;
+	margin-bottom: 2%;
+	text-align: center;
+}
+
+.itemicon{
+	width: 96%;
+	height: 66%;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: 2%;
+	background:red;
+	opacity: 0.1;
+	background-repeat: no-repeat; 
+	background-size: cover;
+	animation-name: download;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+}
+
+.pages{
+	 padding:0 auto;
+}
+
+.table{
+	height: 110%; /* высота нашего блока */
+	width: 85%;
+	padding-left: 15%;
+	padding-bottom: 0;
+	padding-top: 0;
+	display: grid;
+	position: relative;
+	grid-template-columns: 20% 20% 20% 20%;
+	grid-template-rows: 50% 50% 50% 50%;
+	grid-template-areas:
+		"item1 item2 item3 item4"
+		"item5 item6 item7 item8"
+		"item9 item10 item11 item12"
+		"item13 item14 item15 item16";
+	min-height: 95vh;
+	overflow: auto;
+}
+
+.table >.item1,.item2,.item3,.item4,
+	.item5,.item6,.item7,.item8,
+	.item9,.item10,.item11,.item12,
+	.item13,.item14,.item15,.item16{
+	margin: 3%;
+	background: white;
+	border: 4px solid green; 
+	opacity: 1;
+	transition-duration: 1s;
+	transition-property: background;
+}
+.table >.item1:hover,.item2:hover,.item3:hover,.item4:hover,
+	.item5:hover,.item6:hover,.item7:hover,.item8:hover,
+	.item9:hover,.item10:hover,.item11:hover,.item12:hover,
+	.item13:hover,.item14:hover,.item15:hover,.item16:hover{		
+		
+		background: blue; 
+}
+.item1{grid-area: item1;}
+.item2{grid-area: item2;}
+.item3{grid-area: item3;}
+.item4{grid-area: item4;}
+.item5{grid-area: item5;}
+.item6{grid-area: item6;}
+.item7{grid-area: item7;}
+.item8{grid-area: item8;}
+.item9{grid-area: item9;}
+.item10{grid-area: item10;}
+.item11{grid-area: item11;}
+.item12{grid-area: item12;}
+.item13{grid-area: item13;}
+.item14{grid-area: item14;}
+.item15{grid-area: item15;}
+.item16{grid-area: item16;}
+
+.back{
+	width: 100%;
+	height: 110% ;
+	float: right;
+	top: -85px;
+	left:0px;
+	background:url(back.jpeg);
+	background-repeat: no-repeat; 
+	background-size: cover;
+	animation-name: download;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	position: absolute;
+}
+
+@keyframes download{
+	from{
+		opacity: 0.1;
+	}
+	to{
+		opacity: 0.2;
+	}
+}

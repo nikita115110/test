@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" >
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="market.css">
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	</head>
+	<body>
+		<div class="back">
+				sd
+		</div>
+		<div  id="market">
+			<div class="table">
+				<div th:if="${valueItems > 0}" id="it1" class="item1" v-if="valueItems>0">
+					<div class="itemicon"></div>
+					<div class="info">{{obj1.item}}</div>
+					<div class="stars">{{obj1.star}}</div>
+					<div class="price">{{obj1.price}}</div>
+					<button class="buy">в корзину</button>
+				</div>
+				<div th:if="${valueItems > 1}" id="it2" class="item2" v-if="valueItems>1">
+					<div class="itemicon"></div>
+					<div class="info">{{obj2.item}}</div>
+					<div class="stars">{{obj2.star}}</div>
+					<div class="price">{{obj2.price}}</div>
+					<button class="buy">в корзину</button>
+				</div>
+				<div th:if="${valueItems > 2}" id="it3" class="item3" v-if="valueItems>2">
+					<div class="itemicon"></div>
+					<div class="info">{{obj3.item}}</div>
+					<div class="stars">{{obj3.star}}</div>
+					<div class="price">{{obj3.price}}</div>
+					<button class="buy">в корзину</button>
+				</div>
+				<div th:if="${valueItems > 3}" id="it4" class="item4" v-if="valueItems>3">
+					<div class="itemicon"></div>
+					<div class="info">{{obj4.item}}</div>
+					<div class="stars">{{obj4.star}}</div>
+					<div class="price">{{obj4.price}}</div>
+					<button class="buy">в корзину</button>
+				</div>
+				<div th:if="${valueItems > 4}" id="it5" class="item5" v-if="valueItems>4">
+					<div class="itemicon"></div>
+					<div class="info">{{obj5.item}}</div>
+					<div class="stars">{{obj5.star}}</div>
+					<div class="price">{{obj5.price}}</div>
+					<button class="buy">в корзину</button>
+				</div>
+				<div th:if="${valueItems > 5}" id="it6" class="item6" v-if="valueItems>5">
+					<div class="itemicon"></div>
+					<div class="info">{{obj6.item}}</div>
+					<div class="stars">{{obj6.star}}</div>
+					<div class="price">{{obj6.price}}</div>
+					<button class="buy">в корзину</button>
+				</div>
+				<div th:if="${valueItems > 6}" id="it7" class="item7" v-if="valueItems>6">
+					<div class="itemicon"></div>
+					<div class="info">{{obj7.item}}</div>
+					<div class="stars">{{obj7.star}}</div>
+					<div class="price">{{obj7.price}}</div>
+					<button class="buy">в корзину</button>
+				</div>
+				<div th:if="${valueItems > 7}" id="it8" class="item8" v-if="valueItems>7">
+					<div class="itemicon"></div>
+					<div class="info">{{obj8.item}}</div>
+					<div class="stars">{{obj8.star}}</div>
+					<div class="price">{{obj8.price}}</div>
+					<button class="buy">в корзину</button>
+				</div>
+				<div th:if="${valueItems > 8}" id="it9" class="item9" v-if="valueItems>8">
+					<div class="itemicon"></div>
+					<div class="info">{{obj9.item}}</div>
+					<div class="stars">{{obj9.star}}</div>
+					<div class="price">{{obj9.price}}</div>
+					<button class="buy">в корзину</button>
+				</div>
+				<div th:if="${valueItems > 9}" id="it10" class="item10" v-if="valueItems>9">
+					<div class="itemicon"></div>
+					<div class="info">{{obj10.item}}</div>
+					<div class="stars">{{obj10.star}}</div>
+					<div class="price">{{obj10.price}}</div>
+					<button class="buy">в корзину</button>
+				</div>
+				<div th:if="${valueItems > 10}" id="it11" class="item11" v-if="valueItems>10">
+					<div class="itemicon"></div>
+					<div class="info">{{obj11.item}}</div>
+					<div class="stars">{{obj11.star}}</div>
+					<div class="price">{{obj11.price}}</div>
+					<button class="buy">в корзину</button>
+				</div>
+				<div th:if="${valueItems > 11}" id="it12" class="item12" v-if="valueItems>11">
+					<div class="itemicon"></div>
+					<div class="info">{{obj12.item}}</div>
+					<div class="stars">{{obj12.star}}</div>
+					<div class="price">{{obj12.price}}</div>
+					<button class="buy">в корзину</button>
+				</div>
+				<div th:if="${valueItems > 12}"id="it13" class="item13" v-if="valueItems>12">
+					<div class="itemicon"></div>
+					<div class="info">{{obj13.item}}</div>
+					<div class="stars">{{obj13.star}}</div>
+					<div class="price">{{obj13.price}}</div>
+					<button class="buy">в корзину</button>
+				</div>
+				<div th:if="${valueItems > 13}" id="it14" class="item14" v-if="valueItems>13">
+					<div class="itemicon"></div>
+					<div class="info">{{obj14.item}}</div>
+					<div class="stars">{{obj14.star}}</div>
+					<div class="price">{{obj14.price}}</div>
+					<button class="buy">в корзину</button>
+				</div>
+				<div th:if="${valueItems > 14}" id="it15" class="item15" v-if="valueItems>14">
+					<div class="itemicon"></div>
+					<div class="info">{{obj15.item}}</div>
+					<div class="stars">{{obj15.star}}</div>
+					<div class="price">{{obj15.price}}</div>
+					<button class="buy">в корзину</button>
+				</div>
+				<div th:if="${valueItems > 15}" id="it16" class="item16" v-if="valueItems>15">
+					<div class="itemicon"></div>
+					<div class="info">{{obj16.item}}</div>
+					<div class="stars">{{obj16.star}}</div>
+					<div class="price">{{obj16.price}}</div>
+					<button class="buy">в корзину</button>
+				</div>
+					<div class="pages">
+						<a :href="`http://localhost:8080/market?type=${type}&page=${pages[0]}`" v-if="pages[0]!=null">{{pages[0]}}</a>
+						<a :href="`http://localhost:8080/market?type=${type}&page=${pages[1]}`" v-if="pages[1]!=null">{{pages[1]}}</a>
+						<a :href="`http://localhost:8080/market?type=${type}&page=${pages[2]}`" v-if="pages[2]!=null">{{pages[2]}}</a>
+						<a :href="`http://localhost:8080/market?type=${type}&page=${pages[3]}`" v-if="pages[3]!=null">{{pages[3]}}</a>
+						<a :href="`http://localhost:8080/market?type=${type}&page=${pages[4]}`" v-if="pages[4]!=null">{{pages[4]}}</a>
+					</div>
+			</div>
+			<div class="auto" v-if="isAuthentication">
+				<div>
+					{{sumOrders}} руб
+				</div>
+				<div>
+					{{quantityProducte}} заказов
+				</div>
+				<a th:href="@{/market}">в кабинет</a>
+			</div>		
+		</div>	
+	</body>
+	<script type="text/javascript" th:inline="javascript">
+
+
+			var market = new Vue({
+				el: '#market',	
+				data: {
+					type:/*[[${type}]]*/0,
+				  	valueItems:/*[[${valueItems}]]*/16,/* количество предметов*/
+				  	valuePages:/*[[${valuePages}]]*/0,/*количествостраниц*/
+				  	cauntPage:/*[[${cauntPage}]]*/1,/* номер страницы*/		
+					obj1:{item:/*[[${items[0].item}]]*/'null',star:/*[[${items[0].stars}]]*/0,id:/*[[${items[0].id}]]*/0,
+						price:/*[[${items[0].price}]]*/0,urlimage:'null'},
+					obj2:{item:/*[[${items[1].item}]]*/'null',star:/*[[${items[1].stars}]]*/0,id:/*[[${items[1].id}]]*/0,
+						price:/*[[${items[1].price}]]*/0,urlimage:'null'},
+					obj3:{item:/*[[${items[2].item}]]*/'null',star:/*[[${items[2].stars}]]*/0,id:/*[[${items[2].id}]]*/0,
+						price:/*[[${items[2].price}]]*/0,urlimage:'null'},
+					obj4:{item:/*[[${items[3].item}]]*/'null',star:/*[[${items[3].stars}]]*/0,id:/*[[${items[3].id}]]*/0,
+						price:/*[[${items[3].price}]]*/0,urlimage:'null'},
+					obj5:{item:/*[[${items[4].item}]]*/'null',star:/*[[${items[4].stars}]]*/0,id:/*[[${items[4].id}]]*/0,
+						price:/*[[${items[4].price}]]*/0,urlimage:'null'},
+					obj6:{item:/*[[${items[5].item}]]*/'null',star:/*[[${items[5].stars}]]*/0,id:/*[[${items[5].id}]]*/0,
+						price:/*[[${items[5].price}]]*/0,urlimage:'null'},
+					obj7:{item:/*[[${items[6].item}]]*/'null',star:/*[[${items[6].stars}]]*/0,id:/*[[${items[6].id}]]*/0,
+						price:/*[[${items[6].price}]]*/0,urlimage:'null'},
+					obj8:{item:/*[[${items[7].item}]]*/'null',star:/*[[${items[7].stars}]]*/0,id:/*[[${items[7].id}]]*/0,
+						price:/*[[${items[7].price}]]*/0,urlimage:'null'},
+					obj9:{item:/*[[${items[8].item}]]*/'null',star:/*[[${items[8].stars}]]*/0,id:/*[[${items[8].id}]]*/0,
+						price:/*[[${items[8].price}]]*/0,urlimage:'null'},
+					obj10:{item:/*[[${items[9].item}]]*/'null',star:/*[[${items[9].stars}]]*/0,id:/*[[${items[9].id}]]*/0,
+						price:/*[[${items[9].price}]]*/0,urlimage:'null'},
+					obj11:{item:/*[[${items[10].item}]]*/'null',star:/*[[${items[10].stars}]]*/0,id:/*[[${items[10].id}]]*/0,
+						price:/*[[${items[10].price}]]*/0,urlimage:'null'},
+					obj12:{item:/*[[${items[11].item}]]*/'null',star:/*[[${items[11].stars}]]*/0,id:/*[[${items[11].id}]]*/0,
+						price:/*[[${items[11].price}]]*/0,urlimage:'null'},
+					obj13:{item:/*[[${items[12].item}]]*/'null',star:/*[[${items[12].stars}]]*/0,id:/*[[${items[12].id}]]*/0,
+						price:/*[[${items[12].price}]]*/0,urlimage:'null'},
+					obj14:{item:/*[[${items[13].item}]]*/'null',star:/*[[${items[13].stars}]]*/0,id:/*[[${items[13].id}]]*/0,
+						price:/*[[${items[13].price}]]*/0,urlimage:'null'},
+					obj15:{item:/*[[${items[14].item}]]*/'null',star:/*[[${items[14].stars}]]*/0,id:/*[[${items[14].id}]]*/0,
+						price:/*[[${items[14].price}]]*/0,urlimage:'null'},
+					obj16:{item:/*[[${items[15].item}]]*/'null',star:/*[[${items[15].stars}]]*/0,id:/*[[${items[15].id}]]*/0,
+						price:/*[[${items[15].price}]]*/0,urlimage:'null'},
+					isAuthentication:/*[[${isAuthentication}]]*/true,
+					sumOrders:/*[[${sumOrders}]]*/0,
+					quantityProducte:/*[[${quantityProducte}]]*/0,
+					pages:[null,null,null,null,null]
+  				}, 
+  				methods:{
+  					startSetPages:function(){
+  						if(this.valuePages<5){
+  							console.log(this.valuePages);
+  							console.log(this.cauntPage);
+  							switch(this.valuePages){
+	  							case 1:
+	  								Vue.set(this.pages,0,this.cauntPage);
+	  								break;
+	  							case 2:
+	  								switch(this.cauntPage){
+	  									case 1:
+	  										Vue.set(this.pages,0,this.cauntPage);
+			  								Vue.set(this.pages,1,this.cauntPage+1);
+	  										break;
+	  									case 2:
+	  										Vue.set(this.pages,0,this.cauntPage-1);
+			  								Vue.set(this.pages,1,this.cauntPage);
+	  										break;	
+	  								}
+	  								break;
+	  							case 3 :
+	  								switch(this.cauntPage){
+	  									case 1:
+	  										Vue.set(this.pages,0,this.cauntPage);
+			  								Vue.set(this.pages,1,this.cauntPage+1);
+			  								Vue.set(this.pages,2,this.cauntPage+2);
+	  										break;
+	  									case 2:
+	  										Vue.set(this.pages,0,this.cauntPage-1);
+			  								Vue.set(this.pages,1,this.cauntPage);
+			  								Vue.set(this.pages,2,this.cauntPage+1);
+	  										break;	
+	  									case 3:
+	  										Vue.set(this.pages,0,this.cauntPage-2);
+			  								Vue.set(this.pages,1,this.cauntPage-1);
+			  								Vue.set(this.pages,2,this.cauntPage);
+	  										break;	
+	  								}
+	  								break;
+	  							case 4:
+	  								switch(this.cauntPage){
+	  									case 1:
+	  										Vue.set(this.pages,0,this.cauntPage);
+			  								Vue.set(this.pages,1,this.cauntPage+1);
+			  								Vue.set(this.pages,2,this.cauntPage+2);
+			  								Vue.set(this.pages,3,this.cauntPage+3);
+	  										break;
+	  									case 2:
+	  										Vue.set(this.pages,0,this.cauntPage-1);
+			  								Vue.set(this.pages,1,this.cauntPage);
+			  								Vue.set(this.pages,2,this.cauntPage+1);
+			  								Vue.set(this.pages,3,this.cauntPage+2);
+	  										break;	
+	  									case 3:
+	  										Vue.set(this.pages,0,this.cauntPage-2);
+			  								Vue.set(this.pages,1,this.cauntPage-1);
+			  								Vue.set(this.pages,2,this.cauntPage);
+			  								Vue.set(this.pages,3,this.cauntPage+1);
+	  										break;
+	  									case 4:
+	  										Vue.set(this.pages,0,this.cauntPage-3);
+			  								Vue.set(this.pages,1,this.cauntPage-2);
+			  								Vue.set(this.pages,2,this.cauntPage-1);
+			  								Vue.set(this.pages,3,this.cauntPage);
+	  										break;			
+	  								}
+	  								break;
+  							}
+  						}else{
+  							Vue.set(this.pages,0,this.cauntPage-2);
+	  						Vue.set(this.pages,1,this.cauntPage-1);
+	  						Vue.set(this.pages,2,this.cauntPage);
+	  						Vue.set(this.pages,3,this.cauntPage+1);
+	  						Vue.set(this.pages,4,this.cauntPage+2);
+  						}
+  						console.log(this.pages)
+  					},
+  					startSetHight:function(){
+  						if(this.valueItems==0){
+							this.delElement(1);
+  							this.delElement(2);
+  							this.delElement(3);
+  							this.delElement(4);
+  						}else if(this.valueItems<5){
+  							this.delElement(2);
+  							this.delElement(3);
+  							this.delElement(4);
+  						}else if(this.valueItems>4&&this.valueItems<9){
+  							this.delElement(3);
+  							this.delElement(4);
+  						}else if(this.valueItems>8&&this.valueItems<13){
+  							this.delElement(4);
+  						}else{
+
+  						}
+  					},
+  					delElement:function(size){
+  						switch(size){
+  							case 1:
+  								document.getElementById("it1").remove();
+  								document.getElementById("it2").remove();
+  								document.getElementById("it3").remove();
+  								document.getElementById("it4").remove();
+  								break;
+  							case 2:	
+  								document.getElementById("it5").remove();
+  								document.getElementById("it6").remove();
+  								document.getElementById("it7").remove();
+  								document.getElementById("it8").remove();
+  								break;
+  							case 3:
+  								document.getElementById("it9").remove();
+  								document.getElementById("it10").remove();
+  								document.getElementById("it11").remove();
+  								document.getElementById("it12").remove();
+  								break;
+  							case 4:
+  								document.getElementById("it13").remove();
+  								document.getElementById("it14").remove();
+  								document.getElementById("it15").remove();
+  								document.getElementById("it16").remove();
+  								break;
+  						}
+  					}
+  				},
+  				created:function(){					
+  					this.startSetPages();
+  					this.start();
+  					this.startSetHight();
+  					
+  				},
+    			mounted: function(){
+    				
+  				}
+			})
+		</script>
+</html>
